@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% block title %}Clubs{% endblock %}
+{% block body %}
+    <br />
+    <br />
+    <div class="container">
+        <h1>Clubs</h1>
+        <h3>See a list of all of the clubs and honor societies here at Frederick High School.</h3>
+        <br />
+        <ul class="list-group"></ul>
+            {% for article in articles %}
+            <li class="list-group-item">
+                <br />
+                <h3>{{article.name}}</h3>
+                <p><b>Purpose:</b> {{article.purpose}}</p>
+                <p><b>Adviser:</b> {{article.adviser}}</p>
+                <a class="link" href="clubs/{{article.id}}"><button type="button" class="btn btn-primary">Learn →</button></a>
+                <br />
+                <br />
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

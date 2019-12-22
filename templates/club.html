@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+{% block title %}{{article.name}}{% endblock %}
+{% block body %}
+<br />
+<br />
+<div class="container">
+    <h1>{{article.name}}</h1>
+    <br />
+    <h3><b>Adviser: </b> {{article.adviser}}</h3>
+    <br />
+    <h2>Purpose: </h2>
+    <p>{{article.purpose}}</p>
+    <br />
+    <h2>Who Can Join: </h2>
+    <p>{{article.join}}</p>
+    <br />
+    <h2>When Do We Meet: </h2>
+    <p>{{article.meet}}</p>
+    <br /> 
+    <h2>Frequency of Meeting: </h2>
+    <p>{{article.frequently}}</p>
+    <br /> 
+    <h2>Where Are Meetings: </h2>
+    <p>{{article.where}}</p>
+    <br /> 
+    <h2>How To Join: </h2>
+    <p>{{article.join}}</p>
+    <br />
+    <a class="link" href="mailto:{{article.email}}"><button type="button" class="btn btn-primary">Contact →</button></a> 
+    <br />
+</div>
+{% endblock %}

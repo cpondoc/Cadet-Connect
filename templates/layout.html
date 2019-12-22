@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock %} | Cadet Connect</title>
+    <link rel="icon" type="image/png" href="http://thehighflier.org/wp-content/uploads/2018/12/fhslogo.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,800,800i&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+.footer {
+  background-color: #FFD000;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+nav, .navbar{
+  background-color: #FFD000 !important;
+  color: #FFD000;
+}
+
+h1, h2, h4, .navbar-brand {
+  font-family: 'Open Sans';
+  font-style: 'ExtraBold Italic';
+  font-weight: 800;
+  font-display: swap;
+}
+
+#image {
+  text-align: left;
+  display: block;
+}
+
+.questions {
+  text-align: center !important;
+}
+
+button {
+  background-color: #FFD000 !important;
+  border-color: #FFD000 !important;
+}
+
+button:hover {
+  border-color: black !important;
+}
+
+.link, .text-muted {
+  color: black !important;
+}
+
+button {
+  color: black !important;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    {% include 'includes/_navbar.html' %}
+    {% block body %}{% endblock %}
+    <br />
+    <br />
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+          <span class="text-muted">Created and maintained by Chris Pondoc.</span>
+          <br />
+          <span class="text-muted">Property of the Frederick High School Computer Science Honor Society.</span>
+        </div>
+      </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
